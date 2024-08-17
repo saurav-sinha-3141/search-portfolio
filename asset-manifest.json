@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/search-portfolio/static/css/main.7af65a5f.css",
-    "main.js": "/search-portfolio/static/js/main.46fba398.js",
+    "main.css": "/search-portfolio/static/css/main.bd54fc9e.css",
+    "main.js": "/search-portfolio/static/js/main.33cae6ae.js",
     "static/media/Saurav-new-m.jpg": "/search-portfolio/static/media/Saurav-new-m.768eda03ed8125eee87a.jpg",
     "index.html": "/search-portfolio/index.html",
-    "main.7af65a5f.css.map": "/search-portfolio/static/css/main.7af65a5f.css.map",
-    "main.46fba398.js.map": "/search-portfolio/static/js/main.46fba398.js.map"
+    "main.bd54fc9e.css.map": "/search-portfolio/static/css/main.bd54fc9e.css.map",
+    "main.33cae6ae.js.map": "/search-portfolio/static/js/main.33cae6ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.7af65a5f.css",
-    "static/js/main.46fba398.js"
+    "static/css/main.bd54fc9e.css",
+    "static/js/main.33cae6ae.js"
   ]
 }

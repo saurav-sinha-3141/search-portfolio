@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Body from "./Components/Body";
+import Header from "./Components/Header";
 
 function App() {
+  const sectionList = [
+    "All",
+    "About",
+    "Experience",
+    "Projects",
+    "Certifications",
+    "Links",
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="bg-[#1F1F1F] min-h-screen">
+        <Header sectionList={sectionList} />
+        <hr className="thin-border" />
+        <Body />
+      </div>
+    </>
   );
 }
 

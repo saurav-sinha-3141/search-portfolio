@@ -13,7 +13,7 @@ function App() {
   ];
   return (
     <>
-      <div className="bg-[#1F1F1F] min-h-screen">
+      <div className="bg-gradient-to-r from-[#1f1f1f] to-[#080808] min-h-screen">
         <Header sectionList={sectionList} />
         <hr className="thin-border" />
         <Body />

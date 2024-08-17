@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/search-portfolio/static/css/main.b83ffb69.css",
+    "main.js": "/search-portfolio/static/js/main.40408ee5.js",
+    "static/media/Saurav-new-m.jpg": "/search-portfolio/static/media/Saurav-new-m.768eda03ed8125eee87a.jpg",
+    "index.html": "/search-portfolio/index.html",
+    "main.b83ffb69.css.map": "/search-portfolio/static/css/main.b83ffb69.css.map",
+    "main.40408ee5.js.map": "/search-portfolio/static/js/main.40408ee5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b83ffb69.css",
+    "static/js/main.40408ee5.js"
+  ]
+}

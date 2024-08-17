@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import SearchLink from "./SearchLink";
 import sauravImg from "../Assets/Saurav-new-m.jpg";
 import useScreenSize from "../Hooks/useScreenSize";
 
@@ -20,42 +20,52 @@ const Body = () => {
     <>
       <div className="flex justify-center">
         <div className="bg-transparent mx-2 lg:ml-28 w-full my-5 p-3">
-          <Card
+          <SearchLink
             imgLink={sauravImg}
             title="Saurav Sinha"
             link="http://sauravsinha.tech"
             heading="Saurav Sinha - Technology explorer, Fullstack developer"
             description="Wants to learn and use different technologies, experienced in MERN stack, Git"
           />
-          <Card
+          <SearchLink
             imgLink={images.linkedInImg}
             title="LinkedIn - Saurav Sinha"
             link="https://linkedin.com/in/sinhasaurav"
             heading="Saurav Sinha - Senior year BIT Mesra"
             description="Software developer skilled in full-stack development. B.Tech student in Chemical Engineering, with experience in designing impactful web solutions. Always eager to explore new technologies."
           />
-          <Card
+          <SearchLink
             imgLink={images.githubImg}
             title="GitHub - Saurav Sinha"
             link="https://github.com/saurav-sinha-3141"
             heading="Saurav Sinha - Senior year BIT Mesra"
             description="Explore my repositories and feel free to contribute or suggest improvements. I'm always open to new projects and collaborations. Let's connect and create something impactful together!"
           />
-          <Card
+          <SearchLink
             imgLink={images.altImgLink}
             title="Resume"
             link="https://drive.google.com/file/d/1tpmrsPWiNzSHstosYoa5KSOx4fSOZJKs/preview"
             heading="Saurav Sinha - Senior year BIT Mesra"
             description="Explore my repositories and feel free to contribute or suggest improvements. I'm always open to new projects and collaborations. Let's connect and create something impactful together!"
           />
-          <Card
+          <SearchLink
             imgLink={images.xImg}
             title="X"
             link="https://x.com/SSinha3141"
             heading="Saurav Sinha - Senior year BIT Mesra"
             description="Explore my repositories and feel free to contribute or suggest improvements. I'm always open to new projects and collaborations. Let's connect and create something impactful together!"
           />
-
+          <div className="mb-10 w-[60vw] flex overflow-x-auto">
+            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
+            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
+            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
+            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
+            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
+            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
+            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
+            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
+            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
+          </div>
           {/* <iframe
             src="https://drive.google.com/file/d/1tpmrsPWiNzSHstosYoa5KSOx4fSOZJKs/preview"
             width="320"

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = (props) => {
+const SearchLink = (props) => {
   const { imgLink, title, link, heading, description } = props;
 
   const trim = (str) => {
@@ -26,4 +26,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default SearchLink;

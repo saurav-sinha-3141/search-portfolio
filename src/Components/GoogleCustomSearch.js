@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 const GoogleCustomSearch = () => {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://cse.google.com/cse.js?cx=d4f2347e0e2814435";
+    script.src = `https://cse.google.com/cse.js?cx=${process.env.G_SEC_KEY}`;
     script.async = true;
     document.body.appendChild(script);
   }, []);

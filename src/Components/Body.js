@@ -1,7 +1,10 @@
 import React from "react";
+import { useContext } from "react";
 import SearchLink from "./SearchLink";
 import sauravImg from "../Assets/Saurav-new-m.jpg";
 import useScreenSize from "../Hooks/useScreenSize";
+import Projects from "./Projects";
+import { SearchKeyword } from "../Context/SearchKeyword";
 
 const Body = () => {
   const images = {
@@ -12,14 +15,26 @@ const Body = () => {
     githubImg:
       "https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=ffffff",
     xImg: "https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png&color=ffffff",
+    chessComImg:
+      "https://img.icons8.com/?size=100&id=C5LTcmsc3cr0&format=png&color=000000",
   };
 
   const screenSize = useScreenSize();
+
+  const { isNotSauravSinha } = useContext(SearchKeyword);
 
   return (
     <>
       <div className="flex justify-center">
         <div className="bg-transparent mx-2 lg:ml-28 w-full my-5 p-3">
+          {isNotSauravSinha && (
+            <div className="text-[#ff7769] text-lg flex mb-3">
+              Did you mean:
+              <p className="text-[#99c3ff] ml-2 italic font-semibold cursor-pointer hover:underline">
+                Saurav Sinha
+              </p>
+            </div>
+          )}
           <SearchLink
             imgLink={sauravImg}
             title="Saurav Sinha"
@@ -55,22 +70,19 @@ const Body = () => {
             heading="Saurav Sinha - Senior year BIT Mesra"
             description="Explore my repositories and feel free to contribute or suggest improvements. I'm always open to new projects and collaborations. Let's connect and create something impactful together!"
           />
-          <div className="mb-10 w-[60vw] flex overflow-x-auto">
-            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
-            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
-            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
-            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
-            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
-            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
-            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
-            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
-            <div className="h-60 w-60 bg-red-500 mr-10 flex-shrink-0"></div>
-          </div>
+          <Projects />
           {/* <iframe
             src="https://drive.google.com/file/d/1tpmrsPWiNzSHstosYoa5KSOx4fSOZJKs/preview"
             width="320"
             height="390"
           ></iframe> */}
+          <SearchLink
+            imgLink={images.chessComImg}
+            title="Chess.com"
+            link="https://www.chess.com/member/saurav_2802"
+            heading="Chess.com Saurav_2802"
+            description="Explore my repositories and feel free to contribute or suggest improvements. I'm always open to new projects and collaborations. Let's connect and create something impactful together!"
+          />
         </div>
 
         <div className="w-px h-screen bg-[#595858] my-4"></div>
@@ -87,7 +99,7 @@ const Body = () => {
               </div>
               <div className="font-semibold">
                 <div>Saurav Sinha</div>
-                {/* <div className="text-sm ">Fullstack Developer</div> */}
+                {/* <div className="text-sm">Fullstack Developer</div> */}
               </div>
             </div>
             <div className="text-[#B8C1C6]">
@@ -95,14 +107,21 @@ const Body = () => {
               full-stack development. Currently pursuing a Bachelor of
               Technology in Chemical Engineering, he has honed his skills in
               programming languages and frameworks like JavaScript, Python,
-              ReactJS, and MongoDB.
-              <br />
-              Through his internships, Saurav has successfully designed and
-              implemented web solutions that enhance user experiences and
-              streamline processes. He is a quick learner with a strong ability
-              to adapt to new technologies, making him a valuable asset in any
-              development team. Saurav’s dedication to continuous learning and
-              problem-solving defines his approach to software development.
+              ReactJS, and MongoDB
+            </div>
+            <div className="font-semibold my-2 flex">
+              Languages:
+              <p className="text-[#B8C1C6] font-normal ml-2">
+                Java, Python, JavaScript
+              </p>
+            </div>
+            <div className="font-semibold my-2 flex">
+              Frameworks:
+              <p className="text-[#B8C1C6] font-normal ml-2">React, Tailwind</p>
+            </div>
+            <div className="font-semibold my-2 flex">
+              Tech Stack:
+              <p className="text-[#B8C1C6] font-normal ml-2">MERN, NextJS</p>
             </div>
           </div>
         )}

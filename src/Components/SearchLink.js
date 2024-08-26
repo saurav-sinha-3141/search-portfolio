@@ -7,6 +7,7 @@ const SearchLink = (props) => {
     if (str.length > 36) return str.substring(0, 36) + "...";
     return str;
   };
+
   return (
     <div className="mb-10">
       <div className="flex items-center">
@@ -18,9 +19,14 @@ const SearchLink = (props) => {
           <div className="text-xs">{trim(link)}</div>
         </div>
       </div>
-      <div className="my-2 text-xl text-[#99c3ff] cursor-pointer hover:underline inline-block">
+      <a
+        rel="noreferrer"
+        href={link}
+        target="_blank"
+        className="my-2 text-xl text-[#99c3ff] cursor-pointer hover:underline inline-block visited:text-purple-400"
+      >
         {heading}
-      </div>
+      </a>
       <div className="text-[#B8C1C6] text-sm">{description}</div>
     </div>
   );
